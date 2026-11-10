@@ -1,0 +1,27 @@
+# app-ads.txt for Aamir Almani Games
+# Author: Aamir Almani (github.com/aamirali65)
+# This file identifies authorized sellers of ad inventory for this developer
+
+# AdMob Configuration
+# To get your AdMob Publisher ID:
+# 1. Log in to your AdMob account at https://admob.google.com/
+# 2. Go to Apps
+# 3. Select your app
+# 4. Go to Settings and look for "AdMob Publisher ID"
+# 5. Add the following line with your actual Publisher ID
+
+# AdMob (Google)
+# Replace "ca-app-pub-xxxxxxxxxxxxxxxx" with your actual AdMob Publisher ID
+# ca-app-pub-3940256099942544/6300978111 is a Google test ID only
+
+# IMPORTANT: Replace the placeholder below with your real AdMob Publisher ID
+# To find your Publisher ID:
+# - Log in to AdMob: https://admob.google.com/
+# - Go to Monetization > Apps
+# - Select your app and look for the Publisher ID
+# - Add the line: ca-app-pub-YOUR_PUB_ID/UNIT_ID
+
+# AdMob (test only - do not use in production)
+ca-app-pub-3940256099942544/6300978111
+
+# End of app-ads.txt

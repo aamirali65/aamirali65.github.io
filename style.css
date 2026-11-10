@@ -1,0 +1,656 @@
+/*!
+ * Aamir Almani - Game Developer Website
+ * Modern, clean, responsive design - no frameworks, no dependencies
+ */
+
+/* CSS Variables */
+:root {
+    --primary-color: #6c5ce7;
+    --secondary-color: #00cec9;
+    --background-dark: #1a1a2e;
+    --background-card: #16213e;
+    --text-color: #f1f1f1;
+    --text-muted: #b8b8d4;
+    --border-color: #333;
+    --transition-speed: 0.3s;
+}
+
+/* Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--background-dark);
+}
+
+/* Remove default list styles */
+ul {
+    list-style: none;
+}
+
+/* Links */
+a {
+    text-decoration: none;
+    color: var(--primary-color);
+    transition: var(--transition-speed);
+}
+
+a:hover {
+    color: var(--secondary-color);
+}
+
+/* Header */
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+    background: rgba(26, 26, 46, 0.8);
+    backdrop-filter: blur(10px);
+}
+
+nav {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--text-color);
+    letter-spacing: 1px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-links a {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: var(--transition-speed);
+}
+
+.nav-links a:hover {
+    color: var(--primary-color);
+    background-color: var(--background-card);
+}
+
+/* Hero Section */
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 8rem 2rem 4rem;
+    background: linear-gradient(135deg, var(--background-dark) 0%, #0f0f23 100%);
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+}
+
+.hero-content h1 .highlight {
+    color: var(--primary-color);
+    position: relative;
+}
+
+.hero-content h1 .highlight::after {
+    content: '';
+    position: absolute;
+    bottom: 0.1em;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+    border-radius: 2px;
+}
+
+.hero-content .subtitle {
+    font-size: 1.2rem;
+    color: var(--text-muted);
+    margin-bottom: 2rem;
+}
+
+.hero-divider {
+    width: 60px;
+    height: 2px;
+    background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+    margin: 2rem auto;
+}
+
+.btn-primary, .btn-secondary {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: var(--transition-speed);
+    cursor: pointer;
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, var(--primary-color), #a29bfe);
+    color: white;
+    border: none;
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(108, 92, 231, 0.4);
+}
+
+.btn-secondary {
+    background: transparent;
+    color: var(--text-color);
+    border: 2px solid var(--primary-color);
+    margin-left: 1rem;
+}
+
+.btn-secondary:hover {
+    background: var(--primary-color);
+    color: white;
+}
+
+/* Container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+/* Sections */
+section {
+    padding: 4rem 0;
+}
+
+section h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: var(--text-color);
+    text-align: center;
+    position: relative;
+}
+
+section h2::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 3px;
+    background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+}
+
+/* Games Grid */
+.games-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.game-card {
+    background: var(--background-card);
+    border-radius: 8px;
+    padding: 1.5rem;
+    transition: var(--transition-speed);
+    border: 1px solid var(--border-color);
+}
+
+.game-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    border-color: var(--primary-color);
+}
+
+.game-card h3 {
+    margin-bottom: 0.5rem;
+    color: var(--primary-color);
+}
+
+.game-card p {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+.game-card .play-store {
+    display: inline-block;
+    margin-top: 0.5rem;
+    color: var(--secondary-color);
+    font-size: 0.8rem;
+}
+
+/* Features Grid */
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.feature-item {
+    padding: 1.5rem;
+    background: var(--background-card);
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+    transition: var(--transition-speed);
+}
+
+.feature-item:hover {
+    border-color: var(--primary-color);
+}
+
+.feature-item .icon {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+/* About Section */
+.about-image {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.about-image p {
+    color: var(--secondary-color);
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+}
+
+/* Support Section */
+.support-options {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.support-option {
+    padding: 1.5rem;
+    background: var(--background-card);
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+    transition: var(--transition-speed);
+}
+
+.support-option:hover {
+    border-color: var(--primary-color);
+}
+
+.support-option h3 {
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+}
+
+.support-option p {
+    color: var(--text-muted);
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+}
+
+.contact-form .form-group {
+    margin-bottom: 1rem;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: var(--text-color);
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 0.8rem;
+    background: var(--background-card);
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    color: var(--text-color);
+    font-size: 0.9rem;
+    resize: vertical;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border-color: var(--primary-color);
+}
+
+.contact-form button {
+    width: 100%;
+    padding: 0.8rem;
+    background: linear-gradient(135deg, var(--primary-color), #a29bfe);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    margin-top: 0.5rem;
+}
+
+.contact-form button:hover {
+    box-shadow: 0 5px 15px rgba(108, 92, 231, 0.4);
+}
+
+/* Game Detail Section */
+.game-detail {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    .game-detail {
+        grid-template-columns: 1fr;
+    }
+}
+
+.game-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.game-info {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.game-description {
+    flex: 1;
+}
+
+.game-description h3 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.game-description ul {
+    margin-bottom: 1rem;
+    padding-left: 1.5rem;
+}
+
+.game-description li {
+    margin-bottom: 0.5rem;
+    color: var(--text-muted);
+}
+
+.play-store-link {
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.play-button {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    background: linear-gradient(135deg, var(--primary-color), #a29bfe);
+    color: white;
+    border-radius: 4px;
+    font-weight: 500;
+    transition: var(--transition-speed);
+}
+
+.play-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(108, 92, 231, 0.4);
+}
+
+.game-sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.game-sidebar h3 {
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.game-sidebar a {
+    color: var(--secondary-color);
+    font-size: 0.85rem;
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    background: var(--background-card);
+    padding: 3rem 2rem 1rem;
+    margin-top: 4rem;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 3rem;
+}
+
+@media (max-width: 768px) {
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+}
+
+.footer-brand span {
+    font-size: 1.2rem;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.footer-brand p {
+    color: var(--text-muted);
+    font-size: 0.85rem;
+}
+
+.footer-links h3,
+.footer-social h3 {
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+}
+
+.footer-links ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.footer-links a {
+    color: var(--text-muted);
+    font-size: 0.85rem;
+    transition: var(--transition-speed);
+}
+
+.footer-links a:hover {
+    color: var(--primary-color);
+}
+
+.footer-social p {
+    color: var(--text-muted);
+    font-size: 0.85rem;
+    margin-bottom: 1rem;
+}
+
+.footer-bottom {
+    max-width: 1200px;
+    margin: 2rem auto 0;
+    padding-top: 1rem;
+    border-top: 1px solid var(--border-color);
+    text-align: center;
+    color: var(--text-muted);
+    font-size: 0.85rem;
+}
+
+/* Privacy Policy Specific */
+.privacy-content {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2rem;
+    line-height: 1.8;
+}
+
+.privacy-content h1 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: var(--text-color);
+    text-align: center;
+}
+
+.privacy-content h2 {
+    font-size: 1.5rem;
+    margin: 2rem 0 1rem;
+    color: var(--primary-color);
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 0.5rem;
+}
+
+.privacy-content h3 {
+    font-size: 1.2rem;
+    margin: 1.5rem 0 0.5rem;
+    color: var(--text-color);
+}
+
+.privacy-content p {
+    margin-bottom: 1rem;
+    color: var(--text-muted);
+}
+
+.privacy-content ul {
+    margin-bottom: 1rem;
+    padding-left: 2rem;
+}
+
+.privacy-content li {
+    margin-bottom: 0.5rem;
+}
+
+.privacy-content a {
+    color: var(--primary-color);
+    text-decoration: underline;
+}
+
+.privacy-content a:hover {
+    color: var(--secondary-color);
+}
+
+/* Support Page Specific */
+.faq-items {
+    margin-top: 1rem;
+}
+
+.faq-item {
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.faq-question {
+    font-weight: 500;
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+    cursor: pointer;
+}
+
+.faq-question:hover {
+    color: var(--secondary-color);
+}
+
+.faq-answer {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+}
+
+/* Game Pages */
+.game-page {
+    background: var(--background-card);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    text-align: center;
+}
+
+.game-page h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* app-ads.txt */
+.app-ads-txt {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background: var(--background-card);
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    text-align: left;
+    font-family: monospace;
+    white-space: pre-wrap;
+    color: #fff;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+    
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+    
+    .games-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .game-detail {
+        grid-template-columns: 1fr;
+    }
+    
+    .footer-content {
+        grid-template-columns: 1fr;
+    }
+    
+    .privacy-content {
+        padding: 1rem;
+    }
+}
