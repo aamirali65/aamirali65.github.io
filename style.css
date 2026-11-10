@@ -557,3 +557,13 @@ main {
 
 /* Tile value contrast */
 .tile .value { color: var(--ink); }
+
+/* Tiles align left inside the centred hero */
+.tile { text-align: left; }
+
+/* Keep the nav on one line on small phones */
+@media (max-width: 700px) {
+    .header-inner { padding: 0.75rem 1.25rem; }
+    .nav { gap: 0.3rem 0.85rem; }
+    .nav a { font-size: 0.8rem; }
+}
