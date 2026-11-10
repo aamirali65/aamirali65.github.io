@@ -567,3 +567,7 @@ main {
     .nav { gap: 0.3rem 0.85rem; }
     .nav a { font-size: 0.8rem; }
 }
+
+/* Game icon images */
+.app-icon { width: 56px; height: 56px; border-radius: 12px; border: 1px solid var(--line); object-fit: cover; flex: 0 0 auto; }
+.game-icon-lg { width: 84px; height: 84px; border-radius: 18px; border: 1px solid var(--line); margin-bottom: 1.25rem; }

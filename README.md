@@ -89,3 +89,9 @@ configured, otherwise GitHub Pages will stop serving the site.
 
 The repository is `aamirali65/aamirali65.github.io`, served from the `master`
 branch root by GitHub Pages.
+
+## Contact
+
+Email: contact.aamirali6565@gmail.com
+
+GitHub: https://github.com/aamirali65
