@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Contact - AamirDev</title>
-<meta name="description" content="Contact AamirDev about Android games, support or privacy.">
+<meta name="description" content="Contact AamirDev about an Android game, support or privacy.">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="style.css">
 </head>
@@ -12,13 +12,13 @@
 
 <header class="site-header">
   <div class="header-inner">
-    <a class="brand" href="index.html">AamirDev</a>
+    <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true">A</span>AamirDev</a>
     <nav class="nav" aria-label="Main">
       <a href="index.html">Home</a>
-      <a href="about.html">About</a>
       <a href="games/">Games</a>
+      <a href="about.html">About</a>
+      <a href="support/">Help</a>
       <a href="privacy/">Privacy</a>
-      <a href="support/">Support</a>
       <a href="terms/">Terms</a>
       <a href="contact.html" aria-current="page">Contact</a>
     </nav>
@@ -26,32 +26,36 @@
 </header>
 
 <main class="wrap">
-  <section>
+  <section class="help-intro">
     <h1>Contact</h1>
-    <p class="lead">Use GitHub to reach AamirDev about a game, a support issue or a privacy question.</p>
+    <p class="lead">Reach AamirDev about a game, a support issue or a privacy question.</p>
+  </section>
 
-    <ul class="items">
+  <section class="section">
+    <ul class="link-list">
       <li>
-        <strong>GitHub profile</strong>
-        <span>Open an issue or send a message through <a href="https://github.com/aamirali65">github.com/aamirali65</a>. This is the primary contact route.</span>
+        <a href="https://github.com/aamirali65">GitHub profile</a>
+        <span>Primary contact route for support and business messages</span>
       </li>
       <li>
-        <strong>Support questions</strong>
-        <span>Before sending a message, read the <a href="support/">support page</a> for the steps that fix most problems, including updating the game.</span>
+        <a href="support/">Help centre</a>
+        <span>Fixes for updates, crashes and advertising problems</span>
       </li>
       <li>
-        <strong>Privacy requests</strong>
-        <span>Read the <a href="privacy/">privacy policy</a> first. It explains which data is handled by the developer and which is handled by Google AdMob, and how to exercise advertising controls on the device.</span>
+        <a href="privacy/">Privacy policy</a>
+        <span>How data is handled, and how to control ad personalisation</span>
       </li>
       <li>
-        <strong>Developer website listing</strong>
-        <span>This page is the contact reference used for the Google Play developer listing. It is public and needs no sign-in.</span>
+        <a href="games/">Games</a>
+        <span>The current release list</span>
       </li>
     </ul>
 
-    <h2>What to include</h2>
-    <p>For a bug report, include the game name, the game version, your device model, your Android version, and the steps that led to the problem. That is usually enough to reproduce the issue.</p>
-    <p class="note">This site does not use a contact form that stores submissions, and no email address is published here. GitHub is the working contact method.</p>
+    <div class="prose" style="margin-top:2.5rem">
+      <h2>What to include in a bug report</h2>
+      <p>Include the game name, the game version shown in the app, your device model, your Android version, and the steps that led to the problem. That is usually enough to reproduce an issue.</p>
+      <p>There is no published email address on this page, and no contact form that stores submissions. GitHub is the working contact method, and it is public without requiring an account to read.</p>
+    </div>
   </section>
 </main>
 
@@ -60,15 +64,13 @@
     <div class="footer-grid">
       <div>
         <p><strong>AamirDev</strong></p>
-        <p>Independent Android game developer</p>
-        <p class="note">GitHub: <a href="https://github.com/aamirali65">github.com/aamirali65</a></p>
+        <p class="footer-meta">Independent Android game developer</p>
+        <p class="footer-meta">GitHub: <a href="https://github.com/aamirali65">github.com/aamirali65</a></p>
       </div>
       <div class="footer-links">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
         <a href="games/">Games</a>
+        <a href="support/">Help</a>
         <a href="privacy/">Privacy</a>
-        <a href="support/">Support</a>
         <a href="terms/">Terms</a>
         <a href="contact.html">Contact</a>
         <a href="app-ads.txt">app-ads.txt</a>

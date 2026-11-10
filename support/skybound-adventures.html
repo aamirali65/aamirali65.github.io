@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Skybound Adventures support - AamirDev</title>
-<meta name="description" content="Support for Skybound Adventures, an Android game by AamirDev.">
+<title>Skybound Adventures help - AamirDev</title>
+<meta name="description" content="Help with Skybound Adventures, an Android game by AamirDev.">
 <link rel="icon" href="../favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="../style.css">
 </head>
@@ -12,13 +12,13 @@
 
 <header class="site-header">
   <div class="header-inner">
-    <a class="brand" href="../index.html">AamirDev</a>
+    <a class="brand" href="../index.html"><span class="brand-mark" aria-hidden="true">A</span>AamirDev</a>
     <nav class="nav" aria-label="Main">
       <a href="../index.html">Home</a>
-      <a href="../about.html">About</a>
       <a href="../games/">Games</a>
+      <a href="../about.html">About</a>
+      <a href="../support/" aria-current="page">Help</a>
       <a href="../privacy/">Privacy</a>
-      <a href="../support/" aria-current="page">Support</a>
       <a href="../terms/">Terms</a>
       <a href="../contact.html">Contact</a>
     </nav>
@@ -26,34 +26,50 @@
 </header>
 
 <main class="wrap">
-  <section>
-    <h1>Skybound Adventures support</h1>
-    <p class="lead">Help with the Android game Skybound Adventures.</p>
+  <section class="help-intro">
+    <h1>Skybound Adventures help</h1>
+    <p class="lead">Support for the Android game Skybound Adventures.</p>
+  </section>
 
-    <ul class="items">
-      <li>
-        <strong>Update the game</strong>
-        <span>Open the Google Play Store, go to your installed apps, and check for updates. Fixes are delivered through normal store updates.</span>
-      </li>
-      <li>
-        <strong>Common issues</strong>
-        <span>If the game will not open, restart the device and clear the app cache in Android Settings. If ads do not load, check that the device has a working internet connection.</span>
-      </li>
-      <li>
-        <strong>Advertising controls</strong>
-        <span>To limit personalized ads, open Android Settings, then Google, then Ads, and reset or delete the advertising ID. This does not remove ads from the game.</span>
-      </li>
-      <li>
-        <strong>Report a bug</strong>
-        <span>Send the problem through the <a href="../contact.html">contact page</a> and include: the game version shown in the app, your device model, your Android version, and the steps that led to the problem.</span>
-      </li>
-      <li>
-        <strong>Privacy</strong>
-        <span>See the <a href="../privacy/skybound-adventures.html">Skybound Adventures privacy policy</a> for what the app and Google AdMob process.</span>
-      </li>
-    </ul>
+  <div class="faq">
+    <div class="faq-item">
+      <h2>Update the game first</h2>
+      <p>Open the Google Play Store, tap your profile icon, then Manage apps and device, then Updates available. Fixes reach installed copies through normal store updates.</p>
+    </div>
 
-    <p class="note">No response time or support rating is advertised. Replies are sent as time allows.</p>
+    <div class="faq-item">
+      <h2>The game will not open</h2>
+      <ol>
+        <li>Restart the device.</li>
+        <li>Update the game from the Play Store.</li>
+        <li>Clear the cache in Settings, then Apps, then Skybound Adventures, then Storage.</li>
+        <li>Reinstall the game if the problem continues. Local progress will be lost.</li>
+      </ol>
+    </div>
+
+    <div class="faq-item">
+      <h2>Ads do not appear</h2>
+      <p>Check the internet connection and reopen the game. Advertising depends on the ad network having inventory for your region, so an empty ad slot can happen normally and does not stop you playing.</p>
+    </div>
+
+    <div class="faq-item">
+      <h2>Control personalized advertising</h2>
+      <p>Open Settings, then Google, then Ads. From there you can delete or reset the advertising ID and turn off personalized ads. Ads will still appear, but they will not be selected using that identifier.</p>
+    </div>
+
+    <div class="faq-item">
+      <h2>Report a bug</h2>
+      <p>Send a report through the <a href="../contact.html">contact page</a> with the game version, your device model, your Android version, and the steps that led to the problem.</p>
+    </div>
+
+    <div class="faq-item">
+      <h2>Privacy</h2>
+      <p>What the app and Google AdMob process is set out in the <a href="../privacy/skybound-adventures.html">Skybound Adventures privacy policy</a>.</p>
+    </div>
+  </div>
+
+  <section class="section">
+    <p style="font-size:0.9rem;color:var(--muted)">No response time or support rating is advertised. Replies are sent as time allows.</p>
   </section>
 </main>
 
@@ -62,15 +78,13 @@
     <div class="footer-grid">
       <div>
         <p><strong>AamirDev</strong></p>
-        <p>Independent Android game developer</p>
-        <p class="note">GitHub: <a href="https://github.com/aamirali65">github.com/aamirali65</a></p>
+        <p class="footer-meta">Independent Android game developer</p>
+        <p class="footer-meta">GitHub: <a href="https://github.com/aamirali65">github.com/aamirali65</a></p>
       </div>
       <div class="footer-links">
-        <a href="../index.html">Home</a>
-        <a href="../about.html">About</a>
         <a href="../games/">Games</a>
+        <a href="../support/">Help</a>
         <a href="../privacy/">Privacy</a>
-        <a href="../support/">Support</a>
         <a href="../terms/">Terms</a>
         <a href="../contact.html">Contact</a>
         <a href="../app-ads.txt">app-ads.txt</a>

@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>AamirDev - Android game developer</title>
-<meta name="description" content="AamirDev is an independent Android game developer. Games, privacy policy, support and contact details.">
+<title>AamirDev - Android games</title>
+<meta name="description" content="AamirDev is an independent Android game developer. Games, help centre, privacy policy and terms.">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="style.css">
 </head>
@@ -12,72 +12,98 @@
 
 <header class="site-header">
   <div class="header-inner">
-    <a class="brand" href="index.html">AamirDev</a>
+    <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true">A</span>AamirDev</a>
     <nav class="nav" aria-label="Main">
       <a href="index.html" aria-current="page">Home</a>
-      <a href="about.html">About</a>
       <a href="games/">Games</a>
+      <a href="about.html">About</a>
+      <a href="support/">Help</a>
       <a href="privacy/">Privacy</a>
-      <a href="support/">Support</a>
       <a href="terms/">Terms</a>
       <a href="contact.html">Contact</a>
     </nav>
   </div>
 </header>
 
-<main class="wrap">
-  <section class="hero">
+<main>
+  <section class="wrap hero">
+    <div class="hero-mark" aria-hidden="true">A</div>
     <h1>AamirDev</h1>
-    <p class="lead">Independent Android game developer. I build small, focused mobile games and publish them on the Google Play Store.</p>
+    <p class="lead">Independent Android game developer. I build games, publish them on Google Play, and keep the privacy and help pages behind them.</p>
     <div class="actions">
-      <a class="btn" href="games/">View games</a>
-      <a class="btn btn-secondary" href="privacy/">Privacy policy</a>
+      <a class="btn" href="games/">See the game</a>
+      <a class="btn btn-secondary" href="support/">Get help</a>
     </div>
-  </section>
-
-  <hr class="rule">
-
-  <section>
-    <h2>About</h2>
-    <p>AamirDev is the development name used for my Android game releases. Each game is built in small scope so it can be finished, tested on real devices, and supported after release.</p>
-    <p><a href="about.html">Read more about the developer</a></p>
-  </section>
-
-  <section>
-    <h2>Games</h2>
-    <div class="card-grid">
-      <div class="card">
-        <h3>Skybound Adventures</h3>
-        <p>An Android game currently being prepared for release on Google Play.</p>
-        <a href="games/skybound-adventures.html">Game details</a>
+    <div class="tiles">
+      <div class="tile tile-sand">
+        <p class="value">Android</p>
+        <p class="label">Platform</p>
+      </div>
+      <div class="tile tile-mist">
+        <p class="value">Google Play</p>
+        <p class="label">Where games are published</p>
       </div>
     </div>
   </section>
 
-  <section>
-    <h2>How I work</h2>
-    <ul class="items">
+  <section class="wrap section">
+    <div class="section-head">
+      <h2>Games</h2>
+      <p>Released and in release preparation</p>
+    </div>
+    <div class="app-row">
+      <div class="app-tile" aria-hidden="true">SA</div>
+      <div class="app-body">
+        <h3>Skybound Adventures</h3>
+        <p>An Android game in preparation for release on Google Play.</p>
+        <a href="games/skybound-adventures.html">Game details</a>
+      </div>
+    </div>
+    <p class="section-note" style="margin-top:1.25rem;font-size:0.875rem;color:var(--muted)">Only games that exist are listed. Nothing is announced before it is built.</p>
+  </section>
+
+  <section class="wrap section">
+    <div class="section-head">
+      <h2>About</h2>
+    </div>
+    <div class="prose">
+      <p>AamirDev is the name I publish Android games under. I work alone on the code, the store listings and the support pages, so each project stays small enough to finish and maintain.</p>
+      <p>That means fewer promises and more finished work: a game that runs on ordinary phones, a listing that describes it accurately, and a privacy page that explains what the advertising SDK does.</p>
+      <p><a href="about.html">More about the developer</a></p>
+    </div>
+  </section>
+
+  <section class="wrap section">
+    <div class="section-head">
+      <h2>Help and legal</h2>
+      <p>Public, no sign-in required</p>
+    </div>
+    <ul class="link-list">
       <li>
-        <strong>Privacy policy published before release</strong>
-        <span>Every game has a public policy that explains advertising and data handling before the app is listed.</span>
+        <a href="support/">Help centre</a>
+        <span>Updates, crashes, ads and refunds</span>
       </li>
       <li>
-        <strong>No invented numbers</strong>
-        <span>No download counters, ratings or user quotes are shown here. Store figures live on the Google Play listing.</span>
+        <a href="privacy/">Privacy policy</a>
+        <span>What the game and Google AdMob process</span>
       </li>
       <li>
-        <strong>Small scope, real devices</strong>
-        <span>Games are tested on ordinary Android hardware rather than only emulators.</span>
+        <a href="terms/">Terms of use</a>
+        <span>The agreement for using the games</span>
       </li>
     </ul>
   </section>
 
-  <section>
-    <h2>Contact</h2>
-    <p>Questions about a game, a privacy request, or a support issue can be sent through the contact page or the GitHub profile.</p>
-    <div class="actions">
-      <a class="btn" href="contact.html">Contact</a>
-      <a class="btn btn-secondary" href="support/">Support</a>
+  <section class="wrap section">
+    <div class="section-head">
+      <h2>Contact</h2>
+    </div>
+    <div class="prose">
+      <p>The contact route for support questions, privacy requests and business messages is the GitHub profile. There is no published email address and no contact form that stores submissions.</p>
+      <p><a href="https://github.com/aamirali65">github.com/aamirali65</a></p>
+      <div class="actions" style="justify-content:flex-start;margin-top:1.25rem">
+        <a class="btn btn-secondary" href="contact.html">Contact details</a>
+      </div>
     </div>
   </section>
 </main>
@@ -87,15 +113,13 @@
     <div class="footer-grid">
       <div>
         <p><strong>AamirDev</strong></p>
-        <p>Independent Android game developer</p>
-        <p class="note">GitHub: <a href="https://github.com/aamirali65">github.com/aamirali65</a></p>
+        <p class="footer-meta">Independent Android game developer</p>
+        <p class="footer-meta">GitHub: <a href="https://github.com/aamirali65">github.com/aamirali65</a></p>
       </div>
       <div class="footer-links">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
         <a href="games/">Games</a>
+        <a href="support/">Help</a>
         <a href="privacy/">Privacy</a>
-        <a href="support/">Support</a>
         <a href="terms/">Terms</a>
         <a href="contact.html">Contact</a>
         <a href="app-ads.txt">app-ads.txt</a>

@@ -26,7 +26,7 @@ Google AdMob verification.
 index.html                     Home
 about.html                     About the developer
 contact.html                   Contact details
-style.css                      Single stylesheet, neutral dark theme
+style.css                      Single stylesheet, light theme
 script.js                      Empty by design, no animation or cursor effects
 favicon.svg                    Monogram favicon
 app-ads.txt                    AdMob authorized sellers file
@@ -43,7 +43,7 @@ No build step and no dependencies. Open the HTML files directly to preview.
 
 ## Design rules used
 
-- Neutral dark palette with solid colours only.
+- Light palette with flat colours only.
 - Rectangular buttons with a small radius. No pill shapes.
 - No emoji icons, no illustrations, no stock or generated photography.
 - No cursor effects and no scroll animations.
