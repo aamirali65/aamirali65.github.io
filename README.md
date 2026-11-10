@@ -1,163 +1,91 @@
-# Aamir Almani - Game Developer Website
+# AamirDev developer website
 
-## Overview
-This is the official website for Aamir Almani, an independent Android game developer. The website is hosted on GitHub Pages using the free subdomain `aamirali65.github.io`.
+Static site for the AamirDev Android game developer identity. It hosts the
+public privacy policy and support pages used for Google Play listings and for
+Google AdMob verification.
 
-## Website Structure
+## Live URLs
+
+| Page | URL |
+| --- | --- |
+| Home | https://aamirali65.github.io/ |
+| About | https://aamirali65.github.io/about.html |
+| Games | https://aamirali65.github.io/games/ |
+| Skybound Adventures | https://aamirali65.github.io/games/skybound-adventures.html |
+| Privacy policy | https://aamirali65.github.io/privacy/ |
+| Skybound Adventures privacy policy | https://aamirali65.github.io/privacy/skybound-adventures.html |
+| Support | https://aamirali65.github.io/support/ |
+| Skybound Adventures support | https://aamirali65.github.io/support/skybound-adventures.html |
+| Terms of service | https://aamirali65.github.io/terms/ |
+| Contact | https://aamirali65.github.io/contact.html |
+| app-ads.txt | https://aamirali65.github.io/app-ads.txt |
+
+## Structure
+
 ```
-developer-website/
-│
-├── index.html           - Homepage with developer introduction and game listings
-├── about.html           - About the developer page
-├── contact.html         - Contact form and information
-├── style.css            - Modern, responsive styles (no frameworks)
-├── script.js            - Vanilla JavaScript interactions
-│
-├── games/
-│   └── skybound-adventures.html - Skybound Adventures game page
-│
-├── privacy/
-│   ├── index.html       - General privacy policy
-│   └── skybound-adventures.html - Skybound Adventures-specific privacy policy
-│
-├── support/
-│   ├── index.html       - Support/Skybound Adventures page
-│   └── skybound-adventures.html - Skybound Adventures support page
-│
-├── terms/
-│   └── index.html       - Terms of Service
-│
-├── app-ads.txt          - AdMob authorized sellers file
-│
-└── README.md            - This file
-```
-
-## Design Features
-- **Modern, clean design** with dark background and subtle gradients
-- **Mobile-first responsive design** - works on all device sizes
-- **No unnecessary frameworks** - pure HTML, CSS, and JavaScript
-- **Fast loading** - minimal dependencies, optimized assets
-- **Professional game developer identity**
-- **Accessibility-conscious** - semantic HTML, proper contrast
-
-## Pages and Their Purpose
-
-### Homepage (`index.html`)
-- Developer introduction
-- Published and upcoming games
-- Game descriptions
-- Google Play Store links (placeholders)
-- Privacy Policy links
-- Support links
-- Contact information
-
-### About Page (`about.html`)
-- Developer background and philosophy
-- Development experience
-- Contact information
-
-### Games Page
-- Skybound Adventures details
-- Game features and descriptions
-- Google Play Store links
-- Privacy Policy and Support links
-
-### Privacy Policy (`privacy/index.html`)
-- Comprehensive privacy policy covering all games
-- AdMob integration disclosure
-- Data collection and processing information
-- User privacy rights
-- Contact information
-- Last updated date
-
-### Skybound Adventures Privacy Policy (`privacy/skybound-adventures.html`)
-- Game-specific privacy policy
-- AdMob integration details for this title
-- Device identifier handling
-- Children's privacy information
-- User rights specific to this game
-
-### Support Page (`support/index.html`)
-- Contact form for developer communication
-- FAQ section
-- Community links (GitHub)
-- Game-specific support information
-
-### Terms of Service (`terms/index.html`)
-- Terms governing use of games and website
-- Use license information
-- Intellectual property rights
-- Limitation of liability
-- Termination conditions
-
-### AdMob (`app-ads.txt`)
-- Authorized sellers of ad inventory
-- Placeholder AdMob Publisher ID (must be replaced with real ID)
-- Instructions for obtaining real Publisher ID
-
-## Google Play Store Integration
-
-### Privacy Policy URL for Google Play Console
-```
-https://aamirali65.github.io/privacy/skybound-adventures.html
-```
-or the general policy at:
-```
-https://aamirali65.github.io/privacy/
+index.html                     Home
+about.html                     About the developer
+contact.html                   Contact details
+style.css                      Single stylesheet, neutral dark theme
+script.js                      Empty by design, no animation or cursor effects
+favicon.svg                    Monogram favicon
+app-ads.txt                    AdMob authorized sellers file
+games/index.html               Games list
+games/skybound-adventures.html Game detail page
+privacy/index.html             General privacy policy
+privacy/skybound-adventures.html App-specific privacy policy
+support/index.html             General support
+support/skybound-adventures.html App-specific support
+terms/index.html               Terms of service
 ```
 
-### Developer Website Field
-```
-https://aamirali65.github.io/
-```
+No build step and no dependencies. Open the HTML files directly to preview.
 
-### App Support/Contact Field
-```
-https://aamirali65.github.io/contact.html
-```
+## Design rules used
 
-## AdMob Configuration
+- Neutral dark palette with solid colours only.
+- Rectangular buttons with a small radius. No pill shapes.
+- No emoji icons, no illustrations, no stock or generated photography.
+- No cursor effects and no scroll animations.
+- No invented ratings, reviews, download counts or support counters.
+- No marketing claims that cannot be verified.
 
-### app-ads.txt File
-The `app-ads.txt` file is located at:
-```
-https://aamirali65.github.io/app-ads.txt
-```
+## Google Play Console
 
-**Important:** This file currently contains a Google test AdMob Publisher ID. To use it in production:
+Paste these into the Play Console listing:
 
-1. Log in to your AdMob account at https://admob.google.com/
-2. Go to Monetization > Apps
-3. Select your app
-4. Find the "AdMob Publisher ID" (format: ca-app-pub-YYYYYYYYYYYYYY/ZZZZZZZZZZ)
-5. Replace the placeholder in `app-ads.txt` with your actual Publisher ID
+- Privacy policy field: `https://aamirali65.github.io/privacy/skybound-adventures.html`
+- Developer website field: `https://aamirali65.github.io/`
+- App support contact: `https://aamirali65.github.io/contact.html`
 
-### How to Connect Website to Google Play Store
-1. Add the Privacy Policy URL to your Google Play Console listing
-2. Add the website URL (`https://aamirali65.github.io/`) to the Developer Website field
-3. Add the contact/support URL to the App support/contact field
-4. Ensure the app-ads.txt file is accessible from the website root
+## AdMob
+
+`app-ads.txt` currently holds only comments, so nothing invalid is published.
+To activate it:
+
+1. Sign in to AdMob and open Apps, then the app, then App settings.
+2. Copy the publisher ID, which starts with `ca-app-pub-`.
+3. Add this line to `app-ads.txt`, replacing the placeholder number:
+   `google.com, pub-0000000000000000, DIRECT, f08c47fec0942fa0`
+   replacing `0000000000000000` with your own 16-digit publisher number.
+
+In AdMob, set the app-ads.txt verification source to the developer website
+`aamirali65.github.io`. Verification can take up to 24 hours after the file is
+live.
+
+## Custom domain
+
+The site currently runs on the free `aamirali65.github.io` address. To attach a
+custom domain:
+
+1. Add the domain in the repository under Settings, then Pages, then Custom domain.
+2. Create the DNS records GitHub shows for that domain.
+3. Enable Enforce HTTPS once the certificate is issued.
+
+Do not commit a `CNAME` file until the domain is actually owned and its DNS is
+configured, otherwise GitHub Pages will stop serving the site.
 
 ## Deployment
 
-### GitHub Pages Setup
-This website is deployed on GitHub Pages. To deploy changes:
-
-1. Ensure all files are in the repository
-2. The site is pushed to the `main` branch
-3. GitHub Pages is enabled in repository settings
-4. The site is available at `https://aamirali65.github.io/`
-
-### Adding New Games
-To add a new game:
-1. Create a new HTML file in the `games/` directory
-2. Add game details to the homepage `index.html`
-3. Create a specific privacy policy in `privacy/` if needed
-4. Update the navigation if necessary
-
-## Local Development
-No build step required. Open any HTML file in a browser to preview. Changes can be tested locally before pushing to GitHub.
-
-## Contact
-- GitHub: [github.com/aamirali65](https://github.com/aamirali65)
-- Website: [aamirali65.github.io](https://aamirali65.github.io)
+The repository is `aamirali65/aamirali65.github.io`, served from the `master`
+branch root by GitHub Pages.

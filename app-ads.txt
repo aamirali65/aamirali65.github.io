@@ -1,27 +1,20 @@
-# app-ads.txt for Aamir Almani Games
-# Author: Aamir Almani (github.com/aamirali65)
-# This file identifies authorized sellers of ad inventory for this developer
-
-# AdMob Configuration
-# To get your AdMob Publisher ID:
-# 1. Log in to your AdMob account at https://admob.google.com/
-# 2. Go to Apps
-# 3. Select your app
-# 4. Go to Settings and look for "AdMob Publisher ID"
-# 5. Add the following line with your actual Publisher ID
-
-# AdMob (Google)
-# Replace "ca-app-pub-xxxxxxxxxxxxxxxx" with your actual AdMob Publisher ID
-# ca-app-pub-3940256099942544/6300978111 is a Google test ID only
-
-# IMPORTANT: Replace the placeholder below with your real AdMob Publisher ID
-# To find your Publisher ID:
-# - Log in to AdMob: https://admob.google.com/
-# - Go to Monetization > Apps
-# - Select your app and look for the Publisher ID
-# - Add the line: ca-app-pub-YOUR_PUB_ID/UNIT_ID
-
-# AdMob (test only - do not use in production)
-ca-app-pub-3940256099942544/6300978111
-
-# End of app-ads.txt
+# app-ads.txt for AamirDev
+# Public URL: https://aamirali65.github.io/app-ads.txt
+#
+# No seller record is active yet. This file intentionally contains only
+# comments until the real Google AdMob publisher ID is available, so that
+# no invalid or fabricated record is published.
+#
+# To activate it once you have the ID:
+# 1. Sign in to AdMob at https://admob.google.com/
+# 2. Open Apps, select the app, then open App settings.
+# 3. Copy the AdMob publisher ID. It starts with "ca-app-pub-" followed by
+#    your 16-digit publisher number.
+# 4. Add one line below, replacing the placeholder:
+#
+# google.com, pub-0000000000000000, DIRECT, f08c47fec0942fa0
+#
+# The number after "pub-" is your publisher number, without the
+# "ca-app-pub-" prefix and without any slash or ad unit suffix.
+# The trailing value f08c47fec0942fa0 is Google's fixed certification
+# authority ID and stays the same for every AdMob publisher.
